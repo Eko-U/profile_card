@@ -21,7 +21,7 @@ html {
 
 body {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--dark-cyan);
 
   display: flex;
