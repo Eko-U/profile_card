@@ -6,6 +6,7 @@
 
   --white: #fff;
 }
+
 *,
 *::before,
 *::after {
@@ -15,13 +16,14 @@
 }
 
 html {
+  overflow: hidden;
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--dark-cyan);
 
   display: flex;
@@ -43,13 +45,13 @@ body {
 }
 
 .bg-image-top {
-  top: -40rem;
-  left: -30rem;
+  top: -50rem;
+  left: -50rem;
 }
 
 .bg-image-bottom{
-  bottom: -50rem;
-  right: -30rem;
+  bottom: -60rem;
+  right: -40rem;
 }
 
 /* LIST */
@@ -71,7 +73,6 @@ body {
 .image-container {
   border-radius: 50%;
 }
-
 
 .main {
   display: flex;
@@ -139,10 +140,16 @@ body {
   margin-top: .5rem;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 14px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .fit {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 23.75em) {
+  body {
+    padding: 4rem;
+  }
 }
