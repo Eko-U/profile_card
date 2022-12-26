@@ -1,0 +1,142 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  --white: #fff;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--dark-cyan);
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'inter', sans-serif;
+}
+
+.bg-image-top,
+.bg-image-bottom {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-image-top {
+  top: -40rem;
+  left: -30rem;
+}
+
+.bg-image-bottom{
+  bottom: -50rem;
+  right: -30rem;
+}
+
+/* LIST */
+.main-list {
+  list-style: none;
+}
+
+.image-container {
+  transform: translateY(-50%);
+  background-color: var(--white);
+  padding: .8rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image,
+.image-container {
+  border-radius: 50%;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.main-content {
+  background-color: var(--white);
+}
+
+.main-heading {
+  margin-top: -4rem;
+  text-align: center;
+  padding-bottom: 2.5rem;
+
+  border-bottom: .8px solid rgba(85, 85, 85, 0.226);
+}
+
+.main-heading h1 {
+  font-size: 1.8rem;
+  color: var(--very-dark-desaturated-blue);
+
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.main-heading span {
+  color: var(--dark-grayish-blue);
+}
+
+.main-heading .age {
+  font-size: 2rem;
+}
+
+.main-heading .city { 
+  display: block;
+  margin-top: 1rem;
+}
+
+.main-ratings {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-items {
+  text-align: center;
+}
+
+.main-items h2 {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1.8rem;
+}
+
+.main-items span {
+  color: var(--dark-gray);
+  font-size: 1.4rem;
+  margin-top: .5rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.fit {
+  display: flex;
+  justify-content: center;
+}
